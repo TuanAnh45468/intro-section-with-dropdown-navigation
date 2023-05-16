@@ -4,6 +4,6 @@
 
 @layer base {
     body{
-        @apply font-epilogue text-lg
+        @apply font-epilogue text-lg font-medium
     }
 }

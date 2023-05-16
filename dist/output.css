@@ -426,6 +426,7 @@ body {
   font-family: Epilogue, sans-serif;
   font-size: 1.125rem;
   line-height: 1.75rem;
+  font-weight: 500;
 }
 
 *, ::before, ::after {
@@ -564,6 +565,14 @@ body {
   margin-top: 2rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .block {
   display: block;
 }
@@ -576,8 +585,16 @@ body {
   display: none;
 }
 
+.h-\[16px\] {
+  height: 16px;
+}
+
 .h-\[43px\] {
   height: 43px;
+}
+
+.h-\[48px\] {
+  height: 48px;
 }
 
 .h-full {
@@ -588,8 +605,12 @@ body {
   height: 100vh;
 }
 
-.h-\[16px\] {
-  height: 16px;
+.w-\[135px\] {
+  width: 135px;
+}
+
+.w-\[14px\] {
+  width: 14px;
 }
 
 .w-\[196px\] {
@@ -604,16 +625,8 @@ body {
   width: 100%;
 }
 
-.w-\[14px\] {
-  width: 14px;
-}
-
 .flex-col {
   flex-direction: column;
-}
-
-.items-end {
-  align-items: flex-end;
 }
 
 .items-center {
@@ -639,10 +652,6 @@ body {
 
 .gap-y-5 {
   row-gap: 1.25rem;
-}
-
-.self-start {
-  align-self: flex-start;
 }
 
 .self-end {
@@ -680,6 +689,10 @@ body {
   background-color: hsl(0 0% 98% / var(--tw-bg-opacity));
 }
 
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
 .pr-5 {
   padding-right: 1.25rem;
 }
@@ -688,8 +701,8 @@ body {
   padding-top: 1.25rem;
 }
 
-.pl-5 {
-  padding-left: 1.25rem;
+.text-center {
+  text-align: center;
 }
 
 .text-base {
@@ -697,9 +710,23 @@ body {
   line-height: 1.5rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
 .text-medium-gray {
   --tw-text-opacity: 1;
   color: hsl(0 0% 41% / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 98% / var(--tw-text-opacity));
 }
 
 .opacity-75 {
@@ -723,6 +750,26 @@ body {
 @media (min-width: 375px) {
   .mobile\:mt-5 {
     margin-top: 1.25rem;
+  }
+
+  .mobile\:w-\[15px\] {
+    width: 15px;
+  }
+
+  .mobile\:w-\[80px\] {
+    width: 80px;
+  }
+
+  .mobile\:w-\[53px\] {
+    width: 53px;
+  }
+
+  .mobile\:w-\[70px\] {
+    width: 70px;
+  }
+
+  .mobile\:w-\[63px\] {
+    width: 63px;
   }
 
   .mobile\:flex-col {

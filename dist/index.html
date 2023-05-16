@@ -20,24 +20,100 @@
     <link href="output.css" rel="stylesheet" />
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
-  <body>
-    <header>
-      <a href="#">
+  <body class="flex flex-col items-center justify-center bg-white">
+    <div
+      class="bg-black fixed w-full h-full opacity-75 hidden"
+      id="overlay"
+    ></div>
+    <header class="mobile:mt-5 flex items-center justify-between w-[335px]">
+      <a class="block" href="#">
         <img alt="" src="images/logo.svg" />
       </a>
-      <nav>
-        <ul>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Company</a></li>
+      <nav
+        class="max-laptop:fixed sidebar overflow-auto hidden top-0 right-0 flex h-screen mobile:flex-col bg-white pt-5 pr-5 max-laptop:w-[238px]"
+      >
+        <button class="self-end">
+          <img alt="close menu" id="close" src="images/icon-close-menu.svg" />
+        </button>
+        <ul class="ml-5 flex flex-col text-medium-gray gap-y-5">
+          <li>
+            <div class="flex items-center gap-x-2">
+              <span>Features</span>
+              <button id="feature-down">
+                <img alt="" src="images/icon-arrow-down.svg" />
+              </button>
+              <button class="hidden" id="feature-up">
+                <img alt="" src="images/icon-arrow-up.svg" />
+              </button>
+            </div>
+            <div
+              class="flex flex-col gap-y-5 hidden text-base pl-5 mt-8"
+              id="sub-feature"
+            >
+              <div class="flex gap-x-2 items-center">
+                <img
+                  alt=""
+                  class="w-[14px] h-[16px]"
+                  src="images/icon-todo.svg"
+                />
+                <span class="block">Todo List</span>
+              </div>
+
+              <div class="flex gap-x-2 items-center">
+                <img alt="" src="images/icon-calendar.svg" />
+                <span>Calendar</span>
+              </div>
+
+              <div class="flex gap-x-2 items-center">
+                <img alt="" src="images/icon-reminders.svg" />
+                <span>Reminders</span>
+              </div>
+
+              <div class="flex gap-x-2 items-center">
+                <img alt="" src="images/icon-planning.svg" />
+                <span>Planning</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="flex items-center gap-x-2">
+            <div>
+              <div class="flex items-center gap-x-2">
+                <span>Company</span>
+                <button id="company-down"><img alt="" src="images/icon-arrow-down.svg" /></button>
+                <button class="hidden" id="company-up">
+                  <img alt="" src="images/icon-arrow-up.svg" />
+                </button>
+              </div>
+              <div class="flex hidden flex-col gap-y-5 ml-5 mt-8" id="company-sub">
+                <a href="#">History</a>
+                <a href="#">Our Team</a>
+                <a href="#">Blog</a>
+              </div>
+            </div>
+          </li>
+
           <li><a href="#">Careers</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Register</a></li>
+          <li>
+            <a
+              class="flex items-center justify-center self-center rounded-2xl w-[196px] h-[43px]"
+              href="#"
+              >Login</a
+            >
+          </li>
+          <li>
+            <a
+              class="flex items-center justify-center self-center rounded-2xl border w-[196px] h-[43px] border-medium-gray"
+              href="#"
+              >Register</a
+            >
+          </li>
         </ul>
       </nav>
-      <img alt="menu" src="images/icon-menu.svg" />
+      <img alt="menu" class="block" id="menu" src="images/icon-menu.svg" />
     </header>
-    <main>
+    <main class="mt-16">
       <img alt="" class="laptop:hidden" src="images/image-hero-mobile.png" />
       <img
         alt=""
@@ -59,11 +135,12 @@
 
       <section class="flex justify-around">
         <h2 class="sr-only">Our clients</h2>
-        <img alt="databiz" src="images/client-databiz.svg">
-        <img alt="audiophile" src="images/client-audiophile.svg">
-        <img alt="meet" src="images/client-meet.svg">
-        <img alt="maker" src="images/client-maker.svg">
+        <img alt="databiz" src="images/client-databiz.svg" />
+        <img alt="audiophile" src="images/client-audiophile.svg" />
+        <img alt="meet" src="images/client-meet.svg" />
+        <img alt="maker" src="images/client-maker.svg" />
       </section>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>

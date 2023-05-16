@@ -540,17 +540,193 @@ body {
   border-width: 0;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-\[43px\] {
+  height: 43px;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-\[16px\] {
+  height: 16px;
+}
+
+.w-\[196px\] {
+  width: 196px;
+}
+
+.w-\[335px\] {
+  width: 335px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-\[14px\] {
+  width: 14px;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .justify-around {
   justify-content: space-around;
 }
 
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
+.gap-y-5 {
+  row-gap: 1.25rem;
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-medium-gray {
+  --tw-border-opacity: 1;
+  border-color: hsl(0 0% 41% / var(--tw-border-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 8% / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 98% / var(--tw-bg-opacity));
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-medium-gray {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 41% / var(--tw-text-opacity));
+}
+
+.opacity-75 {
+  opacity: 0.75;
+}
+
 @media not all and (min-width: 1440px) {
+  .max-laptop\:fixed {
+    position: fixed;
+  }
+
   .max-laptop\:hidden {
     display: none;
+  }
+
+  .max-laptop\:w-\[238px\] {
+    width: 238px;
+  }
+}
+
+@media (min-width: 375px) {
+  .mobile\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
+  .mobile\:flex-col {
+    flex-direction: column;
   }
 }
 

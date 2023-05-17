@@ -768,10 +768,6 @@ body {
   color: hsl(0 0% 8% / var(--tw-text-opacity));
 }
 
-.hover\:outline-black:hover {
-  outline-color: hsl(0, 0%, 8%);
-}
-
 @media not all and (min-width: 1440px) {
   .max-laptop\:fixed {
     position: fixed;
@@ -819,6 +815,16 @@ body {
 
   .max-laptop\:overflow-auto {
     overflow: auto;
+  }
+
+  .max-laptop\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .max-laptop\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .max-laptop\:pr-5 {

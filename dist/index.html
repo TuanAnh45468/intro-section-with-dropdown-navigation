@@ -22,21 +22,21 @@
   </head>
   <body class="flex flex-col items-center justify-center bg-white">
     <div
-      class="bg-black fixed w-full h-full opacity-75 hidden"
+      class="fixed hidden h-full w-full bg-black opacity-75"
       id="overlay"
     ></div>
-    <header class="mobile:mt-5 flex items-center justify-between w-[335px]">
+    <header class="mobile:mt-5 flex items-center max-laptop:justify-between w-[335px] laptop:w-[1360px]">
       <a class="block" href="#">
         <img alt="" src="images/logo.svg" />
       </a>
       <nav
-        class="max-laptop:fixed sidebar overflow-auto hidden top-0 right-0 flex h-screen mobile:flex-col bg-white pt-5 pr-5 max-laptop:w-[238px]"
+        class="max-laptop:fixed max-laptop:top-0 max-laptop:right-0 flex max-laptop:hidden max-laptop:h-screen laptop:flex-grow laptop:flex-row mobile:flex-col max-laptop:overflow-auto bg-white max-laptop:pt-5 max-laptop:pr-5 sidebar max-laptop:w-[238px]"
       >
-        <button class="self-end">
+        <button class="laptop:hidden self-end">
           <img alt="close menu" id="close" src="images/icon-close-menu.svg" />
         </button>
-        <ul class="ml-5 flex flex-col text-medium-gray gap-y-5">
-          <li>
+        <ul class="laptop:ml-0 ml-5 flex laptop:w-full laptop:flex-row flex-col laptop:items-center gap-y-5 laptop:gap-x-[40px] text-medium-gray">
+          <li class="laptop:relative laptop:ml-8">
             <div class="flex items-center gap-x-2">
               <span>Features</span>
               <button id="feature-down">
@@ -47,10 +47,10 @@
               </button>
             </div>
             <div
-              class="flex flex-col gap-y-5 hidden text-base pl-5 mt-8"
+              class="laptop:absolute laptop:z-20 mt-8 flex hidden flex-col gap-y-5 laptop:bg-white pl-5 text-base laptop:shadow-2xl laptop:w-[150px] laptop:top-[20px] laptop:left-[-19px]"
               id="sub-feature"
             >
-              <div class="flex gap-x-2 items-center">
+              <div class="flex items-center gap-x-2">
                 <img
                   alt=""
                   class="w-[14px] h-[16px]"
@@ -59,17 +59,17 @@
                 <span class="block">Todo List</span>
               </div>
 
-              <div class="flex gap-x-2 items-center">
+              <div class="flex items-center gap-x-2">
                 <img alt="" src="images/icon-calendar.svg" />
                 <span>Calendar</span>
               </div>
 
-              <div class="flex gap-x-2 items-center">
+              <div class="flex items-center gap-x-2">
                 <img alt="" src="images/icon-reminders.svg" />
                 <span>Reminders</span>
               </div>
 
-              <div class="flex gap-x-2 items-center">
+              <div class="flex items-center gap-x-2">
                 <img alt="" src="images/icon-planning.svg" />
                 <span>Planning</span>
               </div>
@@ -77,7 +77,7 @@
           </li>
 
           <li class="flex items-center gap-x-2">
-            <div>
+            <div class="laptop:relative">
               <div class="flex items-center gap-x-2">
                 <span>Company</span>
                 <button id="company-down"><img alt="" src="images/icon-arrow-down.svg" /></button>
@@ -85,7 +85,7 @@
                   <img alt="" src="images/icon-arrow-up.svg" />
                 </button>
               </div>
-              <div class="flex hidden flex-col gap-y-5 ml-5 mt-8" id="company-sub">
+              <div class="laptop:absolute mt-8 ml-5 laptop:ml-0 flex hidden flex-col laptop:pl-[24px] gap-y-5 laptop:bg-white laptop:shadow-2xl laptop:w-[120px] laptop:h-[130px] laptop:top-[20px] laptop:left-[-25px]" id="company-sub">
                 <a href="#">History</a>
                 <a href="#">Our Team</a>
                 <a href="#">Blog</a>
@@ -95,51 +95,52 @@
 
           <li><a href="#">Careers</a></li>
           <li><a href="#">About</a></li>
-          <li>
+          <li class="ml-auto">
             <a
-              class="flex items-center justify-center self-center rounded-2xl w-[196px] h-[43px]"
+              class="flex items-center justify-center self-center rounded-2xl w-[196px] laptop:w-[105px] h-[43px]"
               href="#"
               >Login</a
             >
           </li>
           <li>
             <a
-              class="flex items-center justify-center self-center rounded-2xl border w-[196px] h-[43px] border-medium-gray"
+              class="flex items-center justify-center self-center rounded-2xl border w-[196px] laptop:w-[105px] h-[43px] border-medium-gray"
               href="#"
               >Register</a
             >
           </li>
         </ul>
       </nav>
-      <img alt="menu" class="block" id="menu" src="images/icon-menu.svg" />
+      <img alt="menu" class="block laptop:hidden" id="menu" src="images/icon-menu.svg" />
     </header>
 
-    <main class="mt-16">
-      <img alt="" class="laptop:hidden" src="images/image-hero-mobile.png" />
-      <img
-        alt=""
-        class="max-laptop:hidden"
-        src="images/image-hero-desktop.png"
-      />
-      <section class="flex flex-col gap-y-5 mt-16">
-        <h1 class="text-center text-3xl font-bold">Make remote work</h1>
+    <main class="mt-16 laptop:mb-[165px] laptop:w-[1275px] laptop:grid laptop:grid-cols-2">
+      <section class="mt-16 flex flex-col gap-y-5 laptop:mt-0 laptop:col-start-1 laptop:self-center laptop:pr-[150px]">
+        <h1 class="text-center laptop:text-left text-3xl font-bold laptop:text-6xl">Make remote work</h1>
 
-        <p class="text-center">
+        <p class="text-center laptop:text-left text-xl laptop:mt-[68px]">
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
 
-        <button class="w-[135px] self-center h-[48px] bg-black text-white rounded-2xl font-bold">
+        <button class="self-center laptop:self-start laptop:mt-[60px] rounded-2xl bg-black font-bold text-white w-[135px] laptop:w-[164px] h-[48px] laptop:h-[58px]">
           <a href="#">Learn more</a>
         </button>
       </section>
 
-      <section class="flex justify-around mt-10 mb-16">
+      <img alt="" class="laptop:hidden" src="images/image-hero-mobile.png" />
+      <img
+        alt=""
+        class="max-laptop:hidden col-start-2 col-span-1"
+        src="images/image-hero-desktop.png"
+      />
+
+      <section class="mt-10 mb-16 flex justify-around laptop:pr-[150px] laptop:justify-between laptop:col-start-1 laptop:mt-0">
         <h2 class="sr-only">Our clients</h2>
-        <img alt="databiz" class="mobile:w-[80px]" src="images/client-databiz.svg" />
-        <img alt="audiophile" class="mobile:w-[53px]" src="images/client-audiophile.svg" />
-        <img alt="meet" class="mobile:w-[70px]" src="images/client-meet.svg" />
-        <img alt="maker" class="mobile:w-[63px]" src="images/client-maker.svg" />
+        <img alt="databiz" class="mobile:w-[80px] laptop:w-[114px] laptop:h-[20px]" src="images/client-databiz.svg" />
+        <img alt="audiophile" class="mobile:w-[53px] laptop:w-[73px] laptop:h-[36px]" src="images/client-audiophile.svg" />
+        <img alt="meet" class="mobile:w-[70px] laptop:w-[90px] laptop:h-[20px]" src="images/client-meet.svg" />
+        <img alt="maker" class="mobile:w-[63px] laptop:w-[83px] laptop:h-[24px]" src="images/client-maker.svg" />
       </section>
     </main>
     <script src="main.js"></script>

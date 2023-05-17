@@ -568,6 +568,10 @@ body {
   position: fixed;
 }
 
+.order-1 {
+  order: 1;
+}
+
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -781,6 +785,18 @@ body {
     top: 0px;
   }
 
+  .max-laptop\:order-2 {
+    order: 2;
+  }
+
+  .max-laptop\:order-3 {
+    order: 3;
+  }
+
+  .max-laptop\:flex {
+    display: flex;
+  }
+
   .max-laptop\:hidden {
     display: none;
   }
@@ -791,6 +807,10 @@ body {
 
   .max-laptop\:w-\[238px\] {
     width: 238px;
+  }
+
+  .max-laptop\:flex-col {
+    flex-direction: column;
   }
 
   .max-laptop\:justify-between {
